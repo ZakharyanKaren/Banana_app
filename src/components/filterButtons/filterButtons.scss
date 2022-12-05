@@ -1,0 +1,46 @@
+.filterButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  font-size: 24px;
+
+  p {
+    margin: 0px;
+    color: #cbb1a2;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.activeBtn {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    border-bottom: 4px solid #6749a5;
+    left: 50%;
+    bottom: -12px;
+    transform: translate(-50%, 0px);
+  }
+  > p {
+    position: relative;
+    color: #6749a5;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .filterButtons {
+    width: 260px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filterButtons {
+    width: 200px;
+    font-size: 18px;
+  }
+}

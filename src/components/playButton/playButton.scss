@@ -1,0 +1,29 @@
+.playButton {
+  display: block;
+  padding: 0px;
+  border-radius: 16px;
+  border: 0;
+  cursor: pointer;
+  width: 84px;
+  height: 76px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 991px) {
+  .playButton {
+    width: 58px;
+    height: 54px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .playButton {
+    width: 28px;
+    height: 24px;
+
+    > img {
+      width: 8px;
+      height: 10px;
+    }
+  }
+}
